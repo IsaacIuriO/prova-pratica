@@ -71,8 +71,6 @@ app.get('/alertas', (req, res) =>{
 
 // login - POST
 app.post('/login', (req, res) =>{
-    // manda para a página de login
-    res.sendFile(__dirname + "/login.html"); // AQUIII EU MUDEI 18-11
     // resgata o usuario e senha
     const{ user, password } = req.body
     
@@ -104,4 +102,5 @@ app.post('/cadastro', async (req, res) =>{
 // Bota o server pra funcionar
 const port = 3100;
 app.listen(port);
+
 
