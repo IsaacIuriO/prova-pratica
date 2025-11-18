@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html, body{
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            color: goldenrod;
+        }
+
+        h1, h2{
+            margin: 20px;
+        }
+
+        button{
+            width: 100px;
+        }
+
+        .mb-2{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 10px;
+        }
+        
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            height: 60px;
+
+            background-color: #f3f4f4;
+            border-radius: 10px;
+            box-shadow: 0 10px 5px 2px rgba(0, 0, 0, 0.4);
+            width: 60%;
+            padding: 15px;
+            margin-top: 25px;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+
+    <body>
+        <div class="menu">
+            <form action="/" method="get">
+                <div class="mb-2">
+                    <button type="submit" name="irPrincipal">Principal</button>
+                </div>
+            </form>
+
+            <form action="/cadastro" method="get">
+                <div class="mb-2">
+                    <button type="submit" name="irCadastro">Cadastro</button>
+                </div>
+            </form>
+            
+            <form action="/estoque" method="get">
+                <div class="mb-2">
+                    <button type="submit" name="irEstoque">Estoque</button>
+                </div>
+            </form>
+        </div>
+
+        <h1>Alertas</h1>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+
+</html>
